@@ -168,6 +168,13 @@ const timeline = [
   ["21-24", "Package and pitch", "Backup build, final demo path, short presentation."],
 ];
 
+const navItems = [
+  ["about", "About"],
+  ["team", "Team"],
+  ["showcase", "Showcase"],
+  ["plan", "Plan"],
+];
+
 function ExternalLink({ href, children }) {
   return (
     <a href={href} target="_blank" rel="noreferrer" className="inline-link">
@@ -315,9 +322,9 @@ function App() {
       <ScrollProgress />
       <MouseGlow />
       <nav className="section-nav">
-        {["about", "team", "proof", "plan"].map((item) => (
-          <a key={item} href={`#${item}`}>
-            {item}
+        {navItems.map(([id, label]) => (
+          <a key={id} href={`#${id}`}>
+            {label}
           </a>
         ))}
       </nav>
@@ -357,9 +364,9 @@ function App() {
                   <Users className="h-4 w-4" />
                   Team
                 </Button>
-                <Button as="a" href="#proof" variant="outline">
+                <Button as="a" href="#showcase" variant="outline">
                   <Rocket className="h-4 w-4" />
-                  Proof
+                  Showcase
                 </Button>
               </div>
             </div>
@@ -379,9 +386,9 @@ function App() {
           </div>
         </section>
 
-        <section id="proof" className="content-section">
+        <section id="showcase" className="content-section">
           <SectionHeader
-            eyebrow="Game proof"
+            eyebrow="Game showcase"
             title="Core game projects first"
             description="The portfolio now leads with the two projects that actually prove game feel, visual direction, and playable systems."
           />
