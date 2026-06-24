@@ -39,19 +39,20 @@ const members = [
   {
     name: "Le Quoc Khanh",
     alias: "Khanh",
-    role: "Puzzle QA / AI Output Reviewer",
-    focus: "AI output checking, puzzle consistency, math reasoning",
-    school: "UEH student",
-    status: "CV draft",
+    role: "Game Designer / Gameplay Developer",
+    focus: "Combat systems, champion kits, balance, playtesting",
+    school: "UEH - Event and Entertainment Services Management",
+    status: "CV ready",
     github: "https://github.com/Khanh-glitch",
     linkedin: "https://www.linkedin.com/in/quockhanh-le/",
+    email: "mencan308@gmail.com",
     summary:
-      "UEH student with an AI/data quality direction. Public links are included while the official CV is being finalized.",
-    skills: ["AI QA", "Data annotation", "Model evaluation", "Mathematics", "Prompt review", "Puzzle checking"],
+      "Game designer and gameplay developer behind APEX CHAOS, a playable 1v1 browser autobattler built from concept to deployment with an AI-assisted production workflow.",
+    skills: ["Game design", "Autobattler mechanics", "Champion kits", "Game balance", "GDD writing", "Playtesting", "Canvas", "OpenAI Codex"],
     evidence: [
-      "Draft CV references AI quality analysis and NLP/LLM data review.",
-      "Good fit for testing generated hints, checking edge cases, and validating puzzle clarity.",
-      "Public GitHub and LinkedIn included for registration verification.",
+      "APEX CHAOS - sole creator, game designer, and gameplay developer in an intensive two-week sprint.",
+      "Designed core combat rules, eight champions, targeting, states, counterplay, and balance constraints.",
+      "QA background from reviewing 10,000+ data samples helps catch logic, consistency, and edge-case defects.",
     ],
   },
   {
@@ -104,12 +105,12 @@ const projects = [
   },
   {
     title: "APEX-CHAOS",
-    subtitle: "Core game project / action roster system",
+    subtitle: "Core game project / 1v1 autobattler",
     variant: "apex",
     featured: true,
-    tags: ["React", "Vite", "Game UI", "Character assets"],
+    tags: ["React", "Vite", "Canvas", "GDD", "Combat balance"],
     description:
-      "A production-ready Vite/React game build with strong visual direction: fighter selection UI, animated asset sets, loading/menu scenes, and combat-flavored interface systems.",
+      "Khanh's playable browser prototype with combat rules, eight distinct champions, fighter selection UI, animated asset sets, and a production loop shaped through GDDs, Codex specs, playtesting, and balance tuning.",
     links: [{ label: "GitHub", href: "https://github.com/Khanh-glitch/APEX-CHAOS" }],
   },
   {
