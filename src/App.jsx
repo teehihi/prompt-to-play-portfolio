@@ -332,7 +332,7 @@ function MazeVisual() {
   );
 }
 
-function Qbit({ className = "", shirt = "shirt-ueh.svg", pants = "pants-dino.svg", hat = "hat-frog.svg" }) {
+function Qbit({ className = "", shirt = "shirt-aiute.svg", pants = "pants-dino.svg", hat = "hat-frog.svg" }) {
   return (
     <div className={`qbit ${className}`} aria-hidden="true">
       <img src="/showcase/uniquizz/body.svg" alt="" className="qbit-layer qbit-body" />
@@ -352,7 +352,7 @@ function UniQuizzVisual() {
     "shirt-asn.svg",
     "shirt-aiute.svg",
     "shirt-brazil.svg",
-    "shirt-anime.svg",
+    "shirt-aohub.svg",
     "pants-dino.svg",
     "pants-cargo.svg",
     "hat-frog.svg",
