@@ -111,7 +111,10 @@ const projects = [
     tags: ["React", "Vite", "Canvas", "GDD", "Combat balance"],
     description:
       "Khanh's playable browser prototype with combat rules, eight distinct champions, fighter selection UI, animated asset sets, and a production loop shaped through GDDs, Codex specs, playtesting, and balance tuning.",
-    links: [{ label: "GitHub", href: "https://github.com/Khanh-glitch/APEX-CHAOS" }],
+    links: [
+      { label: "Live demo", href: "https://apexchaos.netlify.app/" },
+      { label: "GitHub", href: "https://github.com/Khanh-glitch/APEX-CHAOS" },
+    ],
   },
   {
     title: "UniQuizz",
