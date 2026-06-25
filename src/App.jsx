@@ -397,21 +397,20 @@ function ApexVisual() {
     ["Ice", "fighter-ice.webp"],
     ["Ninja", "fighter-ninja.webp"],
   ];
-  const vfx = [
-    ["Galaxy impact", "galaxy-impact.webp"],
-    ["Engineer blast", "engineer-explosion.webp"],
-    ["Ice kit", "ice-main.webp"],
-    ["String slash", "string-slash.webp"],
+  const picks = [
+    ["P1 setup", "picked-engineer.webp"],
+    ["P2 setup", "picked-galaxy.webp"],
+    ["Ice pick", "picked-ice.webp"],
+    ["Ninja pick", "picked-ninja.webp"],
   ];
 
   return (
     <div className="apex-visual">
       <div className="apex-select-main">
-        <img src="/showcase/apex/fighter-pick-bg.webp" alt="" className="apex-pick-bg" />
+        <img src="/showcase/apex-menu-bg.webp" alt="" className="apex-pick-bg" />
         <img src="/showcase/apex-logo.webp" alt="" className="apex-logo" />
-        <div className="apex-versus">
+        <div className="apex-pick-row">
           <img src="/showcase/apex/picked-engineer.webp" alt="" />
-          <span>VS</span>
           <img src="/showcase/apex/picked-galaxy.webp" alt="" />
         </div>
         <div className="apex-roster">
@@ -425,7 +424,7 @@ function ApexVisual() {
         <img src="/showcase/apex/fight-button.webp" alt="" className="apex-fight" />
       </div>
       <div className="apex-demo-strip">
-        {vfx.map(([label, src]) => (
+        {picks.map(([label, src]) => (
           <div key={label} className="apex-demo-tile">
             <img src={`/showcase/apex/${src}`} alt="" />
             <span>{label}</span>

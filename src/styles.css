@@ -697,13 +697,13 @@ a {
 
 .apex-visual {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(12rem, 0.55fr);
+  grid-template-columns: minmax(0, 1.35fr) minmax(11.5rem, 0.5fr);
   gap: 0.55rem;
   padding: 0.55rem;
   background:
-    radial-gradient(circle at 18% 16%, rgb(236 72 153 / 0.32), transparent 16rem),
-    radial-gradient(circle at 78% 22%, rgb(99 102 241 / 0.26), transparent 14rem),
-    linear-gradient(135deg, #140716, #190827 56%, #080510);
+    radial-gradient(circle at 18% 16%, rgb(236 72 153 / 0.36), transparent 16rem),
+    radial-gradient(circle at 78% 22%, rgb(249 115 22 / 0.22), transparent 14rem),
+    linear-gradient(135deg, #170918, #240b2b 56%, #0b0614);
 }
 
 .apex-select-main,
@@ -727,7 +727,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(1.18) contrast(1.05) brightness(0.78);
+  filter: saturate(1.2) contrast(1.04) brightness(0.92);
   scale: 1.03;
 }
 
@@ -736,12 +736,12 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgb(0 0 0 / 0.08), rgb(0 0 0 / 0.62)),
-    radial-gradient(circle at 50% 30%, rgb(236 72 153 / 0.2), transparent 16rem);
+    linear-gradient(180deg, rgb(0 0 0 / 0.02), rgb(0 0 0 / 0.44)),
+    radial-gradient(circle at 58% 36%, rgb(236 72 153 / 0.16), transparent 16rem);
 }
 
 .apex-logo,
-.apex-versus,
+.apex-pick-row,
 .apex-roster,
 .apex-fight {
   position: absolute;
@@ -751,46 +751,31 @@ a {
 .apex-logo {
   left: 0.8rem;
   top: 0.75rem;
-  width: min(33%, 10rem);
+  width: min(34%, 10.25rem);
   filter: drop-shadow(0 0.8rem 1.1rem rgb(0 0 0 / 0.55));
 }
 
-.apex-versus {
-  left: 50%;
-  top: 18%;
-  display: grid;
-  width: min(72%, 25rem);
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+.apex-pick-row {
+  right: 1rem;
+  bottom: 4.65rem;
+  display: flex;
+  width: min(56%, 24rem);
   align-items: center;
-  gap: 0.5rem;
-  transform: translateX(-50%);
+  justify-content: flex-end;
+  gap: 0.45rem;
 }
 
-.apex-versus img {
-  width: 100%;
+.apex-pick-row img {
+  width: min(48%, 12rem);
   min-width: 0;
-  filter: drop-shadow(0 0.8rem 1rem rgb(0 0 0 / 0.5));
-}
-
-.apex-versus span {
-  display: grid;
-  width: 3.2rem;
-  height: 3.2rem;
-  place-items: center;
-  border: 1px solid rgb(255 255 255 / 0.22);
-  border-radius: 999px;
-  background: rgb(0 0 0 / 0.52);
-  color: white;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.05rem;
-  font-weight: 900;
-  box-shadow: 0 0 1.3rem rgb(236 72 153 / 0.38);
+  border-radius: 0.35rem;
+  filter: drop-shadow(0 0.8rem 0.9rem rgb(0 0 0 / 0.42));
 }
 
 .apex-roster {
-  right: 0.75rem;
+  right: 1rem;
   bottom: 0.75rem;
-  left: 0.75rem;
+  left: 1rem;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.42rem;
@@ -799,12 +784,12 @@ a {
 .apex-roster span {
   position: relative;
   display: grid;
-  min-height: 3.3rem;
+  min-height: 3.2rem;
   align-items: end;
   overflow: hidden;
   border: 1px solid rgb(255 255 255 / 0.18);
   border-radius: 0.7rem;
-  background: rgb(0 0 0 / 0.48);
+  background: rgb(0 0 0 / 0.36);
   padding: 0.25rem;
   color: rgb(255 255 255 / 0.86);
   font-size: 0.56rem;
@@ -836,7 +821,7 @@ a {
 .apex-fight {
   right: 0.9rem;
   top: 0.9rem;
-  width: min(23%, 8.5rem);
+  width: min(22%, 8rem);
   filter: drop-shadow(0 0.65rem 0.9rem rgb(0 0 0 / 0.45));
   animation: apex-pulse 1.5s ease-in-out infinite alternate;
 }
@@ -863,8 +848,9 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  filter: saturate(1.16) contrast(1.05);
+  object-fit: contain;
+  padding: 0.28rem;
+  filter: saturate(1.12) contrast(1.03) drop-shadow(0 0.8rem 0.9rem rgb(0 0 0 / 0.38));
 }
 
 .apex-demo-tile span {
@@ -1466,15 +1452,14 @@ a {
     width: 26%;
   }
 
-  .apex-versus {
-    top: 22%;
-    width: 80%;
+  .apex-pick-row {
+    right: 0.65rem;
+    bottom: 4.3rem;
+    width: 64%;
   }
 
-  .apex-versus span {
-    width: 2.4rem;
-    height: 2.4rem;
-    font-size: 0.82rem;
+  .apex-pick-row img {
+    width: min(48%, 9rem);
   }
 
   .apex-roster {
