@@ -1,6 +1,8 @@
 # VNGenius Portfolio
 
-![VNGenius team logo](public/team-logo-vngenius-v3.png)
+<p align="center">
+  <img src="public/team-logo-vngenius-v3.png" alt="VNGenius team logo" width="220" />
+</p>
 
 A long-term portfolio website for **VNGenius**, a multidisciplinary student team building software, games, and AI-powered interactive experiences.
 
@@ -23,10 +25,12 @@ The site presents the team, featured projects, current challenge work, and polis
 
 ## Tech Stack
 
-- React 19
-- Vite 7
-- Tailwind CSS 4
-- lucide-react
+<p>
+  <img src="https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React 19" />
+  <img src="https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E" alt="Vite 7" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4-0F172A?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8" alt="Tailwind CSS 4" />
+  <img src="https://img.shields.io/badge/lucide--react-icons-F56565?style=for-the-badge&logo=lucide&logoColor=white" alt="lucide-react" />
+</p>
 
 ## Getting Started
 
