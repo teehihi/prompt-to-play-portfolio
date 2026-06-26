@@ -469,30 +469,28 @@ function ApexVisual() {
 }
 
 function XeNowVisual() {
+  const screenshots = [
+    ["Booking flow", "https://files.catbox.moe/oe3tyt.png"],
+    ["Vehicle details", "https://files.catbox.moe/u8enb0.png"],
+  ];
+
   return (
     <div className="xenow-visual">
-      <div className="xenow-map">
-        <span className="route one" />
-        <span className="route two" />
-        <span className="pin start">A</span>
-        <span className="pin end">B</span>
+      <div className="xenow-demo-main">
+        <img
+          src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGM5M2Z1YmM0eHVpMXdmaW9zMzJwYXN5YW5uNWFkOGQwZWZ3dHY3bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iU8AikdvPGYcfZ5ic2/giphy.gif"
+          alt="XeNow booking flow demo"
+          loading="lazy"
+        />
+        <span>Booking flow</span>
       </div>
-      <div className="xenow-panel">
-        <div>
-          <p>Available now</p>
-          <strong>Honda City RS</strong>
-          <span>4.9 rating / automatic / pickup today</span>
-        </div>
-        <div className="xenow-car" aria-hidden="true">
-          <span className="car-body" />
-          <span className="wheel left" />
-          <span className="wheel right" />
-        </div>
-        <div className="xenow-booking">
-          <span>Search</span>
-          <span>Choose</span>
-          <span className="active">Book</span>
-        </div>
+      <div className="xenow-shot-strip">
+        {screenshots.map(([label, src]) => (
+          <div key={label} className="xenow-shot">
+            <img src={src} alt={`XeNow ${label}`} loading="lazy" />
+            <span>{label}</span>
+          </div>
+        ))}
       </div>
     </div>
   );
