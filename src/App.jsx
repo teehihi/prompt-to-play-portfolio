@@ -429,7 +429,7 @@ function ApexVisual() {
       "Combat in Action",
       "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXUzeHpvcmRwbHFrampuaDdhMWlocjRtc3kxcG1hMWp5MWNud21leCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xGJhfJEIVrRScFvCUF/giphy.gif",
     ],
-    ["Entering the Arena", "https://files.catbox.moe/m1bf90.gif"],
+    ["Entering the Arena", "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWZkOHNhNjdheTh6bXgwZTBzenA1eDN1NzhlZHBrZ2sya3RiY2JpNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8Gr9ffsIQUpuRTsSmE/giphy.gif"],
     [
       "Champion Select",
       "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGdnMHkxNjZ0MHE0bHZ3Z3Vobnhvdzc1MTl3YTJpNW1yYzhiNzNociZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OgLWze8SxRF6xgKJFV/giphy.gif",
