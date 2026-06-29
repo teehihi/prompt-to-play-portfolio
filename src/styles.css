@@ -898,7 +898,8 @@ a {
 .maze-visual,
 .apex-visual,
 .uniquizz-visual,
-.xenow-visual {
+.xenow-visual,
+.archaeologist-visual {
   position: relative;
   min-height: 18rem;
   overflow: hidden;
@@ -1404,6 +1405,71 @@ a {
   transform: translateY(-2px);
 }
 
+.archaeologist-visual {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(11rem, 0.55fr);
+  gap: 0.65rem;
+  padding: 0.65rem;
+  background:
+    radial-gradient(circle at 18% 20%, rgb(16 185 129 / 0.28), transparent 13rem),
+    radial-gradient(circle at 80% 80%, rgb(234 179 8 / 0.15), transparent 12rem),
+    linear-gradient(135deg, #051410, #0a1f1a 58%, #030a08);
+}
+
+.archaeologist-demo-main,
+.archaeologist-demo-tile {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 0.16);
+  border-radius: 0.95rem;
+  background:
+    linear-gradient(rgb(255 255 255 / 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.06) 1px, transparent 1px),
+    linear-gradient(135deg, #0d2f26, #122a22);
+  background-size: 1.2rem 1.2rem, 1.2rem 1.2rem, auto;
+}
+
+.archaeologist-demo-main {
+  min-height: 16.7rem;
+}
+
+.archaeologist-demo-main img,
+.archaeologist-demo-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.archaeologist-demo-main span,
+.archaeologist-demo-tile span {
+  position: absolute;
+  left: 0.65rem;
+  bottom: 0.65rem;
+  z-index: 2;
+  border: 1px solid rgb(255 255 255 / 0.16);
+  border-radius: 999px;
+  background: rgb(2 6 23 / 0.64);
+  padding: 0.18rem 0.48rem;
+  color: rgb(255 255 255 / 0.82);
+  font-size: 0.62rem;
+  backdrop-filter: blur(8px);
+}
+
+.archaeologist-demo-strip {
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.archaeologist-demo-tile {
+  min-height: 0;
+  transition: transform 0.2s ease;
+}
+
+.archaeologist-demo-tile:hover {
+  transform: translateY(-2px);
+}
+
 .supporting-projects {
   display: grid;
   gap: 0.85rem;
@@ -1524,6 +1590,10 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .supporting-projects > :nth-child(3) {
+    grid-column: span 2;
+  }
+
   .featured-grid {
     grid-template-columns: 1fr;
   }
@@ -1611,7 +1681,8 @@ a {
   }
 
   .uniquizz-visual,
-  .xenow-visual {
+  .xenow-visual,
+  .archaeologist-visual {
     grid-template-columns: 1fr;
   }
 
@@ -1621,27 +1692,34 @@ a {
   .uni-closet,
   .xenow-demo-main,
   .xenow-shot-strip,
-  .xenow-shot {
+  .xenow-shot,
+  .archaeologist-demo-main,
+  .archaeologist-demo-strip,
+  .archaeologist-demo-tile {
     min-height: 0;
   }
 
   .maze-demo-main,
-  .xenow-demo-main {
+  .xenow-demo-main,
+  .archaeologist-demo-main {
     aspect-ratio: 16 / 10;
   }
 
   .maze-demo-strip,
-  .xenow-shot-strip {
+  .xenow-shot-strip,
+  .archaeologist-demo-strip {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: none;
   }
 
-  .xenow-shot-strip {
+  .xenow-shot-strip,
+  .archaeologist-demo-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .maze-demo-tile,
-  .xenow-shot {
+  .xenow-shot,
+  .archaeologist-demo-tile {
     aspect-ratio: 1;
     min-height: 0;
   }

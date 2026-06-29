@@ -145,6 +145,17 @@ const projects = [
       { label: "GitHub", href: "https://github.com/teehihi/xe-now-ui" },
     ],
   },
+  {
+    title: "Future Archaeologist: Echoes from the Past",
+    subtitle: "Supporting project / Canva educational puzzle game",
+    variant: "archaeologist",
+    tags: ["Canva", "Educational Game", "Interactive Puzzle", "ELT Learning"],
+    description:
+      "An educational point-and-click puzzle adventure built on Canva for 8th-grade students. Players roleplay as a future archaeologist analyzing 21st-century relics to discover the root cause of a global ecological collapse, solving interactive grammar, vocabulary, pronunciation, and reading comprehension puzzles.",
+    links: [
+      { label: "Live demo", href: "https://naturearchsecret.my.canva.site/future-archaeologist" }
+    ],
+  },
 ];
 
 const strengths = [
@@ -311,7 +322,15 @@ function ProjectCard({ project }) {
     <Card className={`project-card ${hasVisual ? "visual-project" : ""} ${project.featured ? "featured-project" : ""}`}>
       {hasVisual ? (
         <ElectricBorder
-          color={project.variant === "apex" ? "#ec4899" : project.variant === "xenow" ? "#38bdf8" : "#22c55e"}
+          color={
+            project.variant === "apex"
+              ? "#ec4899"
+              : project.variant === "xenow"
+              ? "#38bdf8"
+              : project.variant === "archaeologist"
+              ? "#eab308"
+              : "#22c55e"
+          }
           borderRadius={12}
           className="project-visual-border"
         >
@@ -346,6 +365,7 @@ function ProjectVisual({ variant }) {
   if (variant === "apex") return <ApexVisual />;
   if (variant === "uniquizz") return <UniQuizzVisual />;
   if (variant === "xenow") return <XeNowVisual />;
+  if (variant === "archaeologist") return <ArchaeologistVisual />;
   return <MazeVisual />;
 }
 
@@ -474,6 +494,40 @@ function XeNowVisual() {
         {screenshots.map(([label, src]) => (
           <div key={label} className="xenow-shot">
             <img src={src} alt={`XeNow ${label}`} loading="lazy" />
+            <span>{label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ArchaeologistVisual() {
+  const demos = [
+    [
+      "Main Menu",
+      "https://media.giphy.com/media/cTI9uMluUFQKu3kTXi/giphy.gif",
+    ],
+    [
+      "Gameplay",
+      "https://media.giphy.com/media/UR83IQyU5uk1bZKLZO/giphy.gif",
+    ],
+    [
+      "Wrong Answer Feedback",
+      "https://media.giphy.com/media/lItuG8gGSVFw3svy1F/giphy.gif",
+    ],
+  ];
+
+  return (
+    <div className="archaeologist-visual">
+      <div className="archaeologist-demo-main">
+        <img src={demos[0][1]} alt="Future Archaeologist menu demo" loading="lazy" />
+        <span>{demos[0][0]}</span>
+      </div>
+      <div className="archaeologist-demo-strip">
+        {demos.slice(1).map(([label, src]) => (
+          <div key={label} className="archaeologist-demo-tile">
+            <img src={src} alt={`Future Archaeologist ${label} demo`} loading="lazy" />
             <span>{label}</span>
           </div>
         ))}
