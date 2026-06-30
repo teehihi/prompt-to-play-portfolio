@@ -118,9 +118,9 @@ const projects = [
     featured: true,
     tags: ["React", "Vite", "Canvas", "Co-developed", "Combat balance"],
     description:
-      "A co-developed browser autobattler by Tee and QK/Khanh, with combat rules, eight distinct champions, fighter selection UI, animated asset sets, and a production loop shaped through GDDs, Codex specs, playtesting, and balance tuning.",
+      "A co-developed browser autobattler by Tee and Men, with combat rules, eight distinct champions, fighter selection UI, animated asset sets, and a production loop shaped through GDDs, Codex specs, playtesting, and balance tuning. The original deployment on Netlify exceeded the platform's usage limits, causing the service to be suspended, so the project has since been migrated to Vercel for improved stability and scalability.",
     links: [
-      { label: "Live demo", href: "https://apexchaos.netlify.app/" },
+      { label: "Live demo", href: "https://apexchaos.vercel.app/" },
       { label: "GitHub", href: "https://github.com/Khanh-glitch/APEX-CHAOS" },
     ],
   },
